@@ -1,0 +1,195 @@
+body {
+    background: rgb(0, 0, 0);
+}
+
+.four {
+    display:inline-block;
+    width:110px;
+    height:110px;
+    margin:auto;
+    background:white;
+    color:black;
+    line-height:100px;
+    border-radius:8px;
+    opacity:0.3;
+    transition: all 1s;
+}
+
+.four:hover{
+    opacity:1;
+background-image:url("kamuolys.png");
+border-radius:50%;
+transform:translateX(300px) translateY(200px) rotate(1440deg);
+box-shadow:inset 10px -5px 25px 5px gray,
+-20px -5px 4px 5px gray;
+}
+
+
+.center-top {
+    width: 100px;
+    margin:auto;
+    height: 100px;
+    background-color: red;
+    animation: center-top 3s infinite alternate;
+}
+
+.left-bottom{
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    bottom:100px;
+    background-color: red;
+    animation: left-bottom 3s infinite alternate;
+}
+
+.right-bottom{
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    right:100px;
+    bottom:100px;
+    background-color: red;
+    animation: right-bottom 3s infinite alternate;
+
+}
+
+
+/* Center top */
+
+@keyframes center-top {
+    0% {
+        background: #2980b9;
+        transform:translateY(40px);
+    }
+    
+    25% {
+        background: #e74c3c;
+        transform: rotate(90deg);
+        border-radius: 20px;
+        transform:translateY(-40px);
+    }
+    
+    50% {
+        background: #16917A;
+        transform: rotate(180deg);
+        border-radius: 0px;
+        transform:translateX(100px)
+    }
+    
+    75% {
+        background: #5c0c03;
+        transform: rotate(270deg);
+        border-radius: 20px;
+    }
+    
+    100% {
+        background: #97ad17;
+        transform: rotate(360deg);
+    }
+    }
+
+/* Left-bottom. */
+
+@keyframes left-bottom {
+    0% {
+        background: #2980b9;
+        transform: translateX(650px);
+    }
+
+    25% {
+        background: #e74c3c;
+        transform: rotate(180deg);
+        border-radius: 20px;
+        transform: translateY(-40px);
+    }
+
+    50% {
+        background: #16917A;
+        transform: rotate(-180deg);
+        border-radius: 0px;
+        transform: 
+    }
+
+    75% {
+        background: #5c0c03;
+        transform: rotate(270deg);
+        border-radius: 20px;
+    }
+
+    100% {
+        background: #97ad17;
+        transform: rotate(-360deg);
+    }
+}
+
+/* Right-bottom */
+
+@keyframes right-bottom {
+    0% {
+        background: #2980b9;
+        transform: translateX(-650px);
+    }
+
+    25% {
+        background: #e74c3c;
+        transform: rotate(180deg);
+        border-radius: 20px;
+        transform: translateY(-40px);
+    }
+
+    50% {
+        background: #16917A;
+        transform: rotate(-180deg);
+        border-radius: 0px;
+        transform:
+    }
+
+    75% {
+        background: #5c0c03;
+        transform: rotate(270deg);
+        border-radius: 20px;
+    }
+
+    100% {
+        background: #97ad17;
+        transform: rotate(-360deg);
+    }
+}
+
+
+/* Zodis kvadratas pasikeicia i apskritima.  
+https: //stackoverflow.com/questions/33057737/css-replacing-a-text-on-hover-but-smooth-transition-to-the-new-text-does-not-w
+Pakeisti div kazkuo, kad modeliuotum tik tau reikalingas formas. 
+HTML:
+<div class="wrap">
+    <div class="four">kvadratas</div>
+    <div class="ball">kamuolys</div>
+</div>
+
+
+.four {
+    opacity: 0;
+}
+
+.four,
+.ball {
+    transition: opacity 0.5s linear;
+}
+
+.wrap:hover .four {
+    opacity: 0;
+}
+
+.wrap:hover .ball {
+    opacity: 1;
+}
+
+*/
+
+
+/* Kvadratas i apskritima, pasikeicianti spalva ir dydis, opacity... */
+
+
+
+
+/* Apskritimas krenta zemyn, dideja, prisideda seselis */
